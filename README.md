@@ -28,7 +28,7 @@ All versions (except `lts`) come with [Node 10](https://nodejs.org/en/), [Compos
 
 > `lts` version come with node v8
 
-> *Deprecated images won't get any update.
+> *Deprecated images will not receive any update.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/edbizarro/gitlab-ci-pipeline-php.svg?style=for-the-badge)](https://hub.docker.com/r/edbizarro/gitlab-ci-pipeline-php/)
 
@@ -37,7 +37,7 @@ All versions (except `lts`) come with [Node 10](https://nodejs.org/en/), [Compos
 
 ### Laravel users
 
-These images come with PHP (with all laravel required extensions), Composer (with [hirak/prestissimo](https://github.com/hirak/prestissimo) to speed up), Node and [Yarn](https://yarnpkg.com).
+All images come with PHP (with all laravel required extensions), Composer (with [hirak/prestissimo](https://github.com/hirak/prestissimo) to speed up installs), Node and [Yarn](https://yarnpkg.com).
 
 Everything you need to test Laravel projects :D
 
@@ -118,7 +118,7 @@ test:
 
 deploy:
   stage: deploy
-  image: edbizarro/gitlab-ci-pipeline-php:7.1
+  image: edbizarro/gitlab-ci-pipeline-php:7.2-alpine
   script:
     - echo "Deploy all the things!"
   only:
